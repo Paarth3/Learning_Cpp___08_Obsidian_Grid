@@ -1,0 +1,21 @@
+# Concepts learnt and applied in this project
+- **Multidimensional Arrays:**
+    - Creating arrays of arrays (grids/matrices).
+    - Visualizing data in rows and columns.
+    - Iterating through them using nested loops (one loop for rows, inner loop for columns).
+- **Memory Addresses:**
+    - Understanding that every variable lives at a specific hexadecimal address in RAM.
+    - Using the "Address-of" operator (`&`) to reveal where a variable is stored.
+- **Pass by Value:**
+    - The default way functions handle arguments.
+    - Creates a _copy_ of the data; the original variable remains unchanged.
+    - Safer but slower for large data.
+- **Pass by Reference:**
+    - Using the `&` operator in a function declaration (e.g., `void func(int &x)`).
+    - Passes the _address_ (or an alias) of the original variable.
+    - Allows the function to modify the original variable.
+    - More efficient (no copying) but requires care not to accidentally change data.
+- **Constant Parameters:**
+    - Using the `const` keyword in function parameters (e.g., `void func(const std::string &x)`).
+    - Makes the reference "Read-Only."
+    - Provides the efficiency of Pass by Reference with the safety of Pass by Value.
